@@ -6,6 +6,7 @@ set b=nginx
 set title=Mikhmon Webserver by Laksamadi Guko
 title Mikhmon Webserver
 goto chknginx1
+
 :start1
 %cd%
 cls
@@ -22,6 +23,7 @@ timeout /t 2 >nul
 tasklist /nh /fi "IMAGENAME eq php-cgi.exe" | find /i "php-cgi.exe" >nul && (
 echo.
 echo  %a% is running
+timeout /t 2 >nul
 ) || (
 echo.
 echo  %a% is not running
@@ -33,11 +35,15 @@ title Starting %b%
 echo.
 echo  Starting %b%...
 cd nginx
-echo off
 runbg nginx
+tasklist /nh /fi "IMAGENAME eq nginx.exe" | find /i "nginx.exe" >nul && (
+echo.
+echo  %b% is running
+echo.
+timeout /t 2 >nul
 goto chknginx2
+)
 :start2
-
 cls
 echo.
 echo  %title%
@@ -47,6 +53,7 @@ echo.
 echo  Starting %b%...
 runbg nginx
 goto chknginx2
+
 :chknginx1
 :: Check nginx
 cls
@@ -74,6 +81,3 @@ echo  %b% is running
 echo.
 timeout /t 2 >nul
 exit
-
-
-
