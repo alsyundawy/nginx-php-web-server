@@ -1,10 +1,16 @@
 @echo off
 mode CON:cols=85 lines=20
-color 8F
+color 3F
 set a=php-fastcgi
 set b=nginx
 set title=Mikhmon Webserver by Laksamadi Guko
 title Mikhmon Webserver
+echo.
+echo  ¦¦¦    ¦¦¦ ¦¦ ¦¦   ¦¦ ¦¦   ¦¦ ¦¦¦    ¦¦¦  ¦¦¦¦¦¦  ¦¦¦    ¦¦ 
+echo  ¦¦¦¦  ¦¦¦¦ ¦¦ ¦¦  ¦¦  ¦¦   ¦¦ ¦¦¦¦  ¦¦¦¦ ¦¦    ¦¦ ¦¦¦¦   ¦¦ 
+echo  ¦¦ ¦¦¦¦ ¦¦ ¦¦ ¦¦¦¦¦   ¦¦¦¦¦¦¦ ¦¦ ¦¦¦¦ ¦¦ ¦¦    ¦¦ ¦¦ ¦¦  ¦¦ 
+echo  ¦¦  ¦¦  ¦¦ ¦¦ ¦¦  ¦¦  ¦¦   ¦¦ ¦¦  ¦¦  ¦¦ ¦¦    ¦¦ ¦¦  ¦¦ ¦¦ 
+echo  ¦¦      ¦¦ ¦¦ ¦¦   ¦¦ ¦¦   ¦¦ ¦¦      ¦¦  ¦¦¦¦¦¦  ¦¦   ¦¦¦¦   
 echo.
 echo  %title%
 echo.

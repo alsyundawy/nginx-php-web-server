@@ -1,10 +1,11 @@
 @echo off
 mode CON:cols=85 lines=20
-color 8F
+color 3F
 set a=php-fastcgi
 set b=nginx
 set title=Mikhmon Webserver by Laksamadi Guko
 title Mikhmon Webserver
+
 goto chknginx1
 
 :start1
@@ -57,6 +58,12 @@ goto chknginx2
 :chknginx1
 :: Check nginx
 cls
+echo.
+echo  ¦¦¦    ¦¦¦ ¦¦ ¦¦   ¦¦ ¦¦   ¦¦ ¦¦¦    ¦¦¦  ¦¦¦¦¦¦  ¦¦¦    ¦¦ 
+echo  ¦¦¦¦  ¦¦¦¦ ¦¦ ¦¦  ¦¦  ¦¦   ¦¦ ¦¦¦¦  ¦¦¦¦ ¦¦    ¦¦ ¦¦¦¦   ¦¦ 
+echo  ¦¦ ¦¦¦¦ ¦¦ ¦¦ ¦¦¦¦¦   ¦¦¦¦¦¦¦ ¦¦ ¦¦¦¦ ¦¦ ¦¦    ¦¦ ¦¦ ¦¦  ¦¦ 
+echo  ¦¦  ¦¦  ¦¦ ¦¦ ¦¦  ¦¦  ¦¦   ¦¦ ¦¦  ¦¦  ¦¦ ¦¦    ¦¦ ¦¦  ¦¦ ¦¦ 
+echo  ¦¦      ¦¦ ¦¦ ¦¦   ¦¦ ¦¦   ¦¦ ¦¦      ¦¦  ¦¦¦¦¦¦  ¦¦   ¦¦¦¦   
 echo.
 echo  %title%
 tasklist /nh /fi "IMAGENAME eq nginx.exe" | find /i "nginx.exe" >nul && (
